@@ -1,0 +1,47 @@
+*{
+    box-sizing:  border-box;
+}
+ 
+body{
+    background: rgb(0, 0, 0);
+    margin: 0;
+
+}
+
+.grid-wrapper {  
+      margin: 20px 0;
+    
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    grid-auto-rows: minmax(11.25rem, auto);
+    gap: 15px;
+    justify-content: center;
+}
+
+.square {
+    border-radius: 15%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: steelblue;
+    margin: 0%;
+    font-size: 30%px;
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 40rem) {
+    .container {
+        margin: auto;
+        max-width: 600px;
+        grid-template-columns: repeat(auto-fit, 30%);
+    }
+}
+
+
